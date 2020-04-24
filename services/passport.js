@@ -30,7 +30,7 @@ passport.use(new GoogleStrategy({
                 done(null, user);
             })
         }
-    })
+    }).catch(err => console.log(err));
    
 
 }));
