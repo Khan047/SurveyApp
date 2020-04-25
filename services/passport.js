@@ -15,11 +15,14 @@ passport.deserializeUser( (id, done) => {
     });
 });
 
-passport.use(new GoogleStrategy({
+passport.use(new GoogleStrategy(
+    {
     clientID : keys.googleClienID,
     clientSecret : keys.googleClienSecret,
-    callbackURL : '/auth/google/callback'
-},(accessToken, refreshToken, profile, done)=>{
+    callbackURL : '/auth/google/callback',
+    proxy : true
+    },
+(accessToken, refreshToken, profile, done)=>{
 
 
     Users.findOne({ googleID: profile.id }).then((existingUser)=>{
