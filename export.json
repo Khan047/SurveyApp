@@ -1,0 +1,201 @@
+{
+  "user": {
+    "user": {
+      "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc",
+      "organizationId": 1,
+      "displayName": "Tajammul Khan",
+      "email": "tajzz.tk@gmail.com",
+      "hasSentWelcomeEmail": true,
+      "created": "2018-06-18T10:15:37.433Z",
+      "lastUpdated": "2020-05-02T05:50:50.415Z"
+    },
+    "ownedRooms": [],
+    "roomRoles": [],
+    "userConsents": [
+      {
+        "revision": {
+          "consentId": "newsletter",
+          "consentRevisionId": "1",
+          "text": "Keep me up-to-date with news about product improvements and new features in appear.in."
+        },
+        "grant": null
+      },
+      {
+        "revision": {
+          "consentId": "personalized-onboarding",
+          "consentRevisionId": "2",
+          "text": "Help me get more out of appear.in by sending me tips based on how I use appear.in."
+        },
+        "grant": null
+      },
+      {
+        "revision": {
+          "consentId": "user-research",
+          "consentRevisionId": "3",
+          "text": "I want to contribute to improving appear.in by receiving user research surveys and invitations to participate in user research activities."
+        },
+        "grant": null
+      },
+      {
+        "revision": {
+          "consentId": "marketing",
+          "consentRevisionId": "4",
+          "text": "Inform me about special offers and news from appear.in in marketing channels outside appear.in."
+        },
+        "grant": null
+      },
+      {
+        "revision": {
+          "consentId": "newsletter",
+          "consentRevisionId": "5",
+          "text": "Keep me up-to-date with news about product improvements and new features in Whereby."
+        },
+        "grant": {
+          "consentGrantId": "200387",
+          "consentRevisionId": "5",
+          "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc",
+          "action": "rejected",
+          "createdAt": "2020-05-02T05:50:58.649Z"
+        }
+      },
+      {
+        "revision": {
+          "consentId": "personalized-onboarding",
+          "consentRevisionId": "6",
+          "text": "Help me get more out of Whereby by sending me tips based on how I use Whereby."
+        },
+        "grant": {
+          "consentGrantId": "200388",
+          "consentRevisionId": "6",
+          "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc",
+          "action": "rejected",
+          "createdAt": "2020-05-02T05:50:59.554Z"
+        }
+      },
+      {
+        "revision": {
+          "consentId": "user-research",
+          "consentRevisionId": "7",
+          "text": "I want to contribute to improving Whereby by receiving user research surveys and invitations to participate in user research activities."
+        },
+        "grant": {
+          "consentGrantId": "200389",
+          "consentRevisionId": "7",
+          "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc",
+          "action": "rejected",
+          "createdAt": "2020-05-02T05:51:01.722Z"
+        }
+      },
+      {
+        "revision": {
+          "consentId": "marketing",
+          "consentRevisionId": "8",
+          "text": "Inform me about special offers and news from Whereby in marketing channels outside Whereby."
+        },
+        "grant": {
+          "consentGrantId": "200390",
+          "consentRevisionId": "8",
+          "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc",
+          "action": "rejected",
+          "createdAt": "2020-05-02T05:51:03.156Z"
+        }
+      }
+    ]
+  },
+  "organization": {
+    "organization": {
+      "organizationId": 1,
+      "organizationName": "Personal account",
+      "type": "public",
+      "subdomain": "",
+      "logoImageUrl": null,
+      "roomBackgroundThumbnailUrl": null,
+      "roomBackgroundImageUrl": null,
+      "roomKnockPageBackgroundImageUrl": null,
+      "roomKnockPageBackgroundThumbnailUrl": null,
+      "preferences": null
+    },
+    "organizationRole": null
+  },
+  "customer": {
+    "subscriptions": []
+  },
+  "devices": [
+    {
+      "device": {
+        "deviceId": "5667eca2-f753-44a6-95cc-7242b4e58b5b",
+        "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc"
+      }
+    },
+    {
+      "device": {
+        "deviceId": "bbebd4b6-6750-4fa0-b237-f88ed12dc4ca",
+        "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc"
+      }
+    },
+    {
+      "device": {
+        "deviceId": "14e3961a-7072-4b34-98b1-368b8eb73a49",
+        "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc"
+      }
+    },
+    {
+      "device": {
+        "deviceId": "3adc550c-d9aa-4450-80f1-86dd05710da0",
+        "userId": "c2ae6e33-dfba-4671-8509-bb8c766f47dc"
+      }
+    }
+  ],
+  "analytics": {
+    "amplitude": {
+      "userData": {
+        "merge_times": {
+          "62658748481": 1534562447355,
+          "64252604391": 1535631629301,
+          "57039532841": 1529317043330
+        },
+        "properties": {
+          "organizationId": "1",
+          "email": "tajzz.tk@gmail.com",
+          "registrationDate": "2018-06-18",
+          "roomOwner": false,
+          "userStatus": "alive",
+          "listOfRoomsOwned": [],
+          "noOfRoomsOwned": 0,
+          "displayName": "",
+          "organizationName": "public appear.in"
+        },
+        "country": "India",
+        "device": "Android",
+        "ip_address": "",
+        "library": "amplitude-js/4.4.0",
+        "last_device_id": "588c5ecb-99e8-4c35-90a8-5e122f38a00eR",
+        "platform": "Android app",
+        "version": "3.7",
+        "user_id": "c2ae6e33-dfba-4671-8509-bb8c766f47dc",
+        "dma": "",
+        "num_events": null,
+        "city": "Tolichowki",
+        "aliased_user_id": null,
+        "start_version": "3.7",
+        "canonical_amplitude_id": 57038224299,
+        "os": "Chrome Mobile 59",
+        "language": "English",
+        "aliasing_user_ids": [],
+        "merged_amplitude_ids": [
+          64252604391,
+          62658748481,
+          57039532841
+        ],
+        "device_ids": null,
+        "usage_time": null,
+        "region": "Telangana",
+        "num_sessions": null,
+        "carrier": "",
+        "device_type": "Android",
+        "aliasing_profiles": {},
+        "paying": ""
+      }
+    }
+  }
+}
