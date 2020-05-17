@@ -8,6 +8,8 @@ class Mailer extends helper.Mail {
     constructor({ subject, recipients}, content ) {
 
         super();
+
+        this.sgApi = sendgrid(keys.sendGridKey);
         this.from_email = new helper.Email('surveyappconsole@gmail.com')
         this.subject = subject;
         this.body = new helper.Content('text/html', content);
@@ -16,6 +18,7 @@ class Mailer extends helper.Mail {
         this.addContent(this.body);
 
         this.addClickTracking();
+        this.addRecipients();
     }
 
     formatAddresses(recipients) {
@@ -33,6 +36,26 @@ class Mailer extends helper.Mail {
 
         track.setClickTracking(clickTrack);
         this.addTrackingSettings(track);
+    }
+
+    addRecipients(){
+        const p = new helper.Personalization();
+        this.recipients.forEach(recipients => {
+            p.addTo(recipients)
+            
+        });
+        this.addPersonalization(personalize);
+    }
+
+    async send() {
+        const request = this.sgApi.emptyRequest({
+            method: 'POST',
+            path: '/v3/mail/send',
+            body: this.toJSON()
+        });
+
+        const response = this.sgApi.API(request);
+        return response;
     }
 }
 
