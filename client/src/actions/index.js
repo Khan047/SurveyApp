@@ -17,3 +17,10 @@ console.log(res);
   dispatch({type: LOGOUT_USER});
 
 };
+
+export const submitSurvey = values =>{
+
+    return {
+      type : 'submit_survey'
+    }
+}
