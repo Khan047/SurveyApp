@@ -44,7 +44,7 @@ class Mailer extends helper.Mail {
             p.addTo(recipients)
             
         });
-        this.addPersonalization(personalize);
+        this.addPersonalization(p);
     }
 
     async send() {
@@ -54,7 +54,7 @@ class Mailer extends helper.Mail {
             body: this.toJSON()
         });
 
-        const response = this.sgApi.API(request);
+        const response = await this.sgApi.API(request);
         return response;
     }
 }

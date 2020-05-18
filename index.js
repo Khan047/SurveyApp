@@ -3,6 +3,7 @@ const keys = require('./config/keys');
 const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
+const bodyParser=require('body-parser');
 require('./models/users');
 require('./models/survey');
 require('./services/passport');
@@ -17,6 +18,8 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(bodyParser.json());
+
 
 require('./routes/authRoutes')(app);
 require('./routes/surveyRoutes')(app);
